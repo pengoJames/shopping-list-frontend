@@ -21,7 +21,7 @@ function ItemList() {
                     name={item.name}
                     category={item.category}
                     price={item.price}
-                    buyer={crime.buyer}
+                    buyer={item.buyer}
                 />
             ))}
 

@@ -13,6 +13,16 @@ function ItemList() {
         .then((items) => setItems(items));
     }, []);
 
+
+    function handleDeleteItem(deleteditem) {
+        const updatedItems = items.filter((item) => item.id !== deleteditem.id);
+        setItems(updatedItems);
+    }
+
+    function handleUpdateItem(updatedItem) {
+        console.log(updatedItem);
+    }
+
     return (
         <div className="item-list">
             {items.map((item) => (
@@ -22,6 +32,8 @@ function ItemList() {
                     category={item.category}
                     price={item.price}
                     buyer={item.buyer}
+                    deleteItem={handleDeleteItem}
+                    onUpdate={handleUpdateItem}
                 />
             ))}
 

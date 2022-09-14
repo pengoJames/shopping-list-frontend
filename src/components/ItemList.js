@@ -14,14 +14,13 @@ function ItemList() {
     }, []);
 
     return (
-        // <div className="item-list">
-        //     {items.map((item) => (
+        <div className="item-list">
+            {items.map((item) => (
+                <></>
+            ))}
 
-
-        //     ))}
-
-        // </div>
-    )
+        </div>
+    );
 }
 
 export default ItemList

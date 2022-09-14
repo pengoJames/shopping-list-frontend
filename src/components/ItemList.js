@@ -21,6 +21,7 @@ function ItemList() {
                     name={item.name}
                     category={item.category}
                     price={item.price}
+                    buyer={crime.buyer}
                 />
             ))}
 
@@ -28,4 +29,4 @@ function ItemList() {
     );
 }
 
-export default ItemList
+export default ItemList;

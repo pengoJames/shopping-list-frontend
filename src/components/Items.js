@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Items({id, name, category, price}){
+function Items({name, category, price}){
     
     
     return(

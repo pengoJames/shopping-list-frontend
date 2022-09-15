@@ -28,6 +28,7 @@ function ItemList() {
             {items.map((item) => (
                 <Items 
                     key={item.id}
+                    id={item.id}
                     name={item.name}
                     category={item.category}
                     price={item.price}

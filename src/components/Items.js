@@ -14,7 +14,7 @@ function Items({id, item, name, category, price, deletedItem, onUpdate}){
     return(
         <div className="item">
             <div className="item-header">
-            <h1>Item: {name}</h1>
+            <h2>Item: {name}</h2>
             </div>
             <span>Category: {category}</span>
             <div className="item-footer">

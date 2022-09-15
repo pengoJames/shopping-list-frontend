@@ -34,23 +34,24 @@ function handleChange(event){
   return (
     <div className='shop-app'>
         <form className='NewItem'onSubmit={handleSubmit}>
-            <div>
+          <div className='select-items'> 
+            <div className='label'>
                 <label>Item Name</label>
             </div>
             <input type="text" name='name' value={itemData.name} onChange={handleChange}/>
            
-            <div>
+            <div className='label'>
                 <label>Category of Item</label>
             </div>
             <input type="text" name='category'value={itemData.category} onChange={handleChange}/>
             
-            <div>
+            <div className='label'>
                 <label>Price of Item</label>
             </div>
             <input type="number" name='price'value={itemData.price} onChange={handleChange}/>
 
-            <div>
-                <label>Selecting Buyer</label>
+            <div className='label'>
+                <label>Buyer</label>
                 <select name ="buyer_id" value={itemData.buyer_id} onChange ={handleChange}>
                     <option>1</option>
                     <option>2</option>
@@ -60,6 +61,7 @@ function handleChange(event){
                 </select>
             </div>
             <button type="submit">Add Item</button>
+          </div>
         </form>
     </div>
   )
